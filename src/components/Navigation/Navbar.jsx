@@ -48,7 +48,7 @@ const Navbar = () => {
         ? 'bg-black/80 backdrop-blur-xl border-b border-gray-700/50 py-4' 
         : 'bg-transparent py-6'
     }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
           {/* Logo */}
@@ -57,23 +57,27 @@ const Navbar = () => {
             className="flex items-center gap-3 cursor-pointer group"
           >
             <div className="relative">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <span className="text-white font-bold text-lg">P</span>
+              <div className="flex items-center justify-center w-12 h-12 transition-transform duration-300 border bg-gradient-to-r from-blue-500/20 to-blue-600/20 rounded-xl group-hover:scale-110 backdrop-blur-sm border-blue-500/30">
+                <img 
+                  src="/logo.jpg" 
+                  alt="Prime Digital Logo" 
+                  className="object-contain w-8 h-8"
+                />
               </div>
-              <div className="absolute inset-0 bg-blue-500 rounded-xl blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 transition-opacity duration-300 bg-blue-500 opacity-0 rounded-xl blur-lg group-hover:opacity-30"></div>
             </div>
-            <span className="text-2xl font-bold text-white group-hover:text-blue-300 transition-colors duration-300">
+            <span className="text-2xl font-bold text-white transition-colors duration-300 group-hover:text-blue-300">
               Prime Digital
             </span>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="items-center hidden gap-8 md:flex">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="relative text-gray-300 hover:text-white transition-colors duration-300 group"
+                className="relative text-gray-300 transition-colors duration-300 hover:text-white group"
               >
                 {item.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 group-hover:w-full transition-all duration-300"></span>
@@ -85,17 +89,17 @@ const Navbar = () => {
           <div className="hidden md:block">
             <button 
               onClick={() => scrollToSection('contact')}
-              className="group relative px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg font-semibold text-white overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
+              className="relative px-6 py-3 overflow-hidden font-semibold text-white transition-all duration-300 rounded-lg group bg-gradient-to-r from-blue-500 to-blue-600 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
             >
               <span className="relative z-10">Get Started</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-700 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+              <div className="absolute inset-0 transition-transform duration-300 origin-left transform scale-x-0 bg-gradient-to-r from-blue-600 to-blue-700 group-hover:scale-x-100"></div>
             </button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden relative w-10 h-10 flex items-center justify-center text-white"
+            className="relative flex items-center justify-center w-10 h-10 text-white md:hidden"
           >
             <div className="relative">
               <span className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
@@ -120,14 +124,14 @@ const Navbar = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="block w-full text-left text-gray-300 hover:text-white transition-colors duration-300 py-2"
+                className="block w-full py-2 text-left text-gray-300 transition-colors duration-300 hover:text-white"
               >
                 {item.name}
               </button>
             ))}
             <button 
               onClick={() => scrollToSection('contact')}
-              className="w-full mt-4 px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg font-semibold text-white"
+              className="w-full px-6 py-3 mt-4 font-semibold text-white rounded-lg bg-gradient-to-r from-blue-500 to-blue-600"
             >
               Get Started
             </button>
