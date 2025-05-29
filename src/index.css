@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* --- Your custom CSS below (Keep this as is) --- */
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00D4FF; /* Neon blue scrollbar */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0099CC; /* Darker blue on hover */
+}
+
+/* Smooth scroll for anchor links on the home page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background: #00D4FF; /* Neon blue selection */
+  color: #000;
+}
+
+/* Global font and overflow */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scroll due to animations */
+}
+
+/* Base styles for sections (for smooth fade-in with GSAP/ScrollTrigger later) */
+section {
+  opacity: 1; /* Default to visible for now */
+  transform: translateY(0px); /* Default to no transform */
+}
