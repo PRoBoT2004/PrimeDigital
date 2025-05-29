@@ -15,7 +15,7 @@ const HomePage = () => {
       {/* Navigation */}
       <Navbar />
       
-      <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-blue-900 relative overflow-hidden">
+      <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-black via-gray-900 to-blue-900">
         {/* Particles Canvas */}
         <ParticleCanvas />
 
@@ -161,7 +161,38 @@ const HomePage = () => {
         .delay-800 { animation-delay: 800ms; }
         .delay-1000 { animation-delay: 1000ms; }
         .delay-2000 { animation-delay: 2000ms; }
+
+         @keyframes modal-fade-in {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes modal-fade-out {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+  }
+
+  .modal-enter {
+    animation: modal-fade-in 0.3s ease-out forwards;
+  }
+
+  .modal-exit {
+    animation: modal-fade-out 0.3s ease-out forwards;
+  }
       `}</style>
+      
     </>
   );
 };

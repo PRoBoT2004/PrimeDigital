@@ -45,7 +45,7 @@ const BeforeAfterComparison = ({ project }) => {
   // Mock before/after data - you can replace with real project data
   const beforeAfterData = {
     before: {
-      image: "https://images.unsplash.com/photo-1486312338219-ce68e2c6b7d3?w=800&h=600&fit=crop",
+      image: "/public/before.jpg",
       title: "Old Website",
       issues: [
         "Outdated design language",
@@ -56,7 +56,7 @@ const BeforeAfterComparison = ({ project }) => {
       ]
     },
     after: {
-      image: project.image,
+      image: "/public/after.jpg",
       title: "New Design",
       improvements: [
         "Modern, luxury aesthetic",

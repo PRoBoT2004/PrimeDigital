@@ -10,7 +10,7 @@ export const contactInfo = [
       </svg>
     ),
     title: "Email",
-    value: "hello@primedigital.com",
+    value: "krishna200428@gmail.com",
     description: "Send us an email anytime",
     gradient: "from-blue-500 to-cyan-500"
   },
@@ -22,7 +22,7 @@ export const contactInfo = [
       </svg>
     ),
     title: "Phone",
-    value: "+1 (555) 123-4567",
+    value: "+91 9016116357",
     description: "Call us during business hours",
     gradient: "from-emerald-500 to-teal-500"
   },
@@ -35,7 +35,7 @@ export const contactInfo = [
       </svg>
     ),
     title: "Office",
-    value: "San Francisco, CA",
+    value: "Bharuch , Gujarat , India",
     description: "Visit our headquarters",
     gradient: "from-purple-500 to-pink-500"
   },

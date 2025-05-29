@@ -2,79 +2,88 @@ import React from 'react';
 import ScrollReveal from '../Effects/ScrollReveal';
 
 const DesignProcess = ({ project }) => {
-  const processSteps = [
-    {      phase: "01",
-      title: "Research & Analysis",
-      description: "Deep dive into user behavior, competitor analysis, and identifying pain points in the existing design.",
-      duration: "2 weeks",
-      deliverables: ["User Research Report", "Competitor Analysis", "Technical Audit"],
-      icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-        </svg>
-      )
-    },
-    {
-      phase: "02", 
-      title: "Strategy & Planning",
-      description: "Defining user personas, creating information architecture, and establishing design principles.",
-      duration: "1 week",
-      deliverables: ["User Personas", "Site Map", "Design System"],
-      icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-        </svg>
-      )
-    },
-    {
-      phase: "03",
-      title: "Wireframing & Prototyping", 
-      description: "Creating low-fidelity wireframes and interactive prototypes to validate user flows.",
-      duration: "2 weeks",
-      deliverables: ["Wireframes", "Interactive Prototype", "User Flow Diagrams"],
-      icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
-        </svg>
-      )
-    },
-    {
-      phase: "04",
-      title: "Visual Design",
-      description: "Crafting the luxury aesthetic with premium typography, colors, and visual elements.",
-      duration: "3 weeks", 
-      deliverables: ["High-fidelity Mockups", "Style Guide", "Component Library"],
-      icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z" />
-        </svg>
-      )
-    },
-    {
-      phase: "05",
-      title: "Development & Testing",
-      description: "Building the responsive platform with cutting-edge technologies and rigorous testing.",
-      duration: "4 weeks",
-      deliverables: ["Responsive Website", "Performance Optimization", "QA Testing"],
-      icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-        </svg>
-      )
-    },
-    {
-      phase: "06",
-      title: "Launch & Optimization",
-      description: "Deploying the platform and continuous optimization based on user feedback and analytics.",
-      duration: "Ongoing",
-      deliverables: ["Live Website", "Analytics Setup", "Performance Monitoring"],
-      icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-        </svg>
-      )
-    }
-  ];
+  // Add this to DesignProcess.jsx - replace the existing processSteps
+const processSteps = [
+  {
+    phase: "01",
+    title: "Research & Discovery",
+    description: "User research, competitor analysis, and market study for luxury real estate targeting high-net-worth individuals.",
+    duration: "1-2 Days",
+    deliverables: ["User Personas", "Journey Maps", "Competitive Analysis"],
+    tools: ["Figma", "Miro", "User Interviews"],
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+      </svg>
+    )
+  },
+  {
+    phase: "02", 
+    title: "Wireframing & Architecture",
+    description: "Low-fidelity wireframes and information architecture planning in Figma.",
+    duration: "2 Days",
+    deliverables: ["Wireframes", "Site Map", "User Flows"],
+    tools: ["Figma", "Whimsical"],
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+      </svg>
+    )
+  },
+  {
+    phase: "03",
+    title: "Visual Design & Branding", 
+    description: "High-fidelity designs in Figma with custom graphics created in Photoshop for luxury aesthetic.",
+    duration: "2 Days",
+    deliverables: ["Design System", "Style Guide", "Brand Assets"],
+    tools: ["Figma", "Photoshop", "Illustrator"],
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z" />
+      </svg>
+    )
+  },
+  {
+    phase: "04",
+    title: "Prototyping & Testing",
+    description: "Interactive prototypes in Figma and usability testing to validate design decisions.",
+    duration: "3 Days", 
+    deliverables: ["Interactive Prototypes", "Usability Reports", "Design Iterations"],
+    tools: ["Figma", "Principle", "Maze"],
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4" />
+      </svg>
+    )
+  },
+  {
+    phase: "05",
+    title: "Development & Implementation",
+    description: "Converting Figma designs to responsive React application with pixel-perfect accuracy.",
+    duration: "3 Days",
+    deliverables: ["Responsive Website", "Component Library", "Documentation"],
+    tools: ["React", "Next.js", "Tailwind CSS", "Framer Motion"],
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+      </svg>
+    )
+  },
+  {
+    phase: "06",
+    title: "Testing & Optimization",
+    description: "Cross-browser testing, performance optimization, and final quality assurance.",
+    duration: "1 week",
+    deliverables: ["Live Website", "Performance Report", "Handover Documentation"],
+    tools: ["Testing Tools", "Analytics", "Performance Monitoring"],
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    )
+  }
+];
+  
 
   return (
     <div className="mb-20">
