@@ -86,14 +86,14 @@ const Navbar = () => {
                 <div className="flex items-center justify-center w-10 h-10 transition-transform duration-300 border sm:w-12 sm:h-12 bg-gradient-to-r from-blue-500/20 to-blue-600/20 rounded-xl group-hover:scale-110 backdrop-blur-sm border-blue-500/30">
                   <img 
                     src="/logo.png" 
-                    alt="Prime Digital Logo" 
+                    alt="Prime Digitals Logo" 
                     className="object-contain w-6 h-6 sm:w-8 sm:h-8"
                   />
                 </div>
                 <div className="absolute inset-0 transition-opacity duration-300 bg-blue-500 opacity-0 rounded-xl blur-lg group-hover:opacity-30"></div>
               </div>
               <span className="text-xl font-bold text-white transition-colors duration-300 sm:text-2xl group-hover:text-blue-300">
-                Prime Digital
+                Prime Digitals
               </span>
             </div>
 

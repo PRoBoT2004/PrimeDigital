@@ -44,11 +44,11 @@ const Footer = () => {
               <div className="flex items-center justify-center w-10 h-10 border bg-gradient-to-r from-blue-500/20 to-blue-600/20 rounded-xl border-blue-500/30">
                 <img 
                   src="/logo.png" 
-                  alt="Prime Digital Logo" 
+                  alt="Prime Digitals Logo" 
                   className="object-contain w-6 h-6 sm:w-8 sm:h-8"
                 />
               </div>
-              <span className="text-2xl font-bold text-white">Prime Digital</span>
+              <span className="text-2xl font-bold text-white">Prime Digitals</span>
             </div>
             <p className="max-w-md mb-6 text-gray-400">
               Transforming ideas into digital reality with cutting-edge technology and innovative solutions. 
