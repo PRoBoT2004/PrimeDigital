@@ -81,9 +81,9 @@ const HeroSection = () => {
             </ScrollReveal>
           </div>
 
-          {/* Right Visual */}
+          {/* Right Visual - Hidden on Mobile */}
           <div 
-            className="relative flex justify-center lg:justify-end"
+            className="relative justify-center hidden lg:flex lg:justify-end"
             style={{
               transform: `translateY(${scrollY * -0.1}px)`
             }}
